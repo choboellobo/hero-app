@@ -73,7 +73,7 @@ export class HeroeComponent implements OnInit {
             },
             error: ( error ) => {
              this.toast.error('Error', 'Error loading hero', { timeOut: 3000 });
-              //this.router.navigate(['/heroes']);
+              this.router.navigate(['/heroes']);
               this.loading = false;
             }
       })
